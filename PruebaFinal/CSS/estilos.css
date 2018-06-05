@@ -1,0 +1,212 @@
+* {
+	font-family: 'Dancing Script', cursive;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #02010a;
+}
+
+.contenido {
+	max-width: 900px;
+	margin: 0 auto;
+	animation-duration: 2s;
+   animation-name: slidein;
+}
+
+@keyframes slidein {
+  0% {margin-top: 150%;}
+  60% {margin-top: -5%;}
+  100% {margin-top: 0%;}
+}
+
+/* -------------------- HEADER -------------------*/
+header {
+	background-color: #5b7989;
+	box-sizing: border-box;
+	padding: 20px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+header h1 {
+	color: white;
+	text-align: left;
+	text-shadow: 2px 2px #02010a;
+}
+
+header a {
+	color: white;
+}
+
+header ul {
+	list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+
+header ul li {
+	display: block;
+   text-align: center;
+	padding-left: 16px;
+   text-decoration: none;
+	float: right;
+}
+
+/* -------------------- PICTURES -------------------*/
+#wrapper
+{
+	width: 900px;
+	margin: 0 auto;
+}
+
+article
+{
+	box-sizing: border-box;
+	float:left;
+	height: 100%;
+	background-color: grey;
+	padding: 2%;
+	text-align: center;
+}
+
+img{
+	width: 400px;
+	height: 100%;
+	-webkit-filter: drop-shadow(2px 2px 2px #02010a);
+}
+
+/* ---Principal Picture--- */
+#imagenprin img{
+	width: 100%;
+}
+
+#columna1 {
+	background-color: #82c3a6;
+	width: 100%;
+}
+
+
+/* ---Secondaries Pictures--- */
+#imagensec article{
+	background-color:  #d5c75f;
+	width: 50%;
+}
+
+#imagensec1 {
+   -webkit-transition: -webkit-transform .8s ease-in-out;
+           transition:         transform .8s ease-in-out;
+}
+
+#imagensec1:hover {
+	-webkit-transform: rotate(10deg);
+   transform: rotate(10deg);
+	-webkit-filter: drop-shadow(2px 2px 2px #82c3a6);
+}
+
+#imagensec2 {
+   -webkit-transition: -webkit-transform .8s ease-in-out;
+           transition:         transform .8s ease-in-out;
+}
+
+#imagensec2:hover {
+	transform: translate(20px, -5px);
+	-webkit-filter: drop-shadow(2px 2px 2px #82c3a6);
+}
+
+
+/* -------------------- RETRATOS y PAISAJES -------------------*/
+#secondcolumns article {
+	background-color: #d5c75f;
+	width: 33.33%;
+}
+
+#secondcolumns img {
+	width: 100%;
+}
+
+#imagen1 img{
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+#imagenpar img{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#imagen3 img{
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+
+
+/* -------------------- FOOTER -------------------*/
+
+#fcolumns {
+	height: 200px;
+	font-family: Indie Flower;
+	border-radius: 0px 0px 10px 10px;
+}
+
+#fcolumns article {
+	background-color: #C6d5c5;
+	width: 25%;
+	text-align: left;
+}
+
+#fcolumns article img {
+	width: 15px;
+	height: 15px;
+}
+
+#fcolumns h3 {
+	margin: 0px;
+	font-size: 70%;
+}
+
+#redes h3 {
+	display: inline-block;
+}
+
+
+/* -------------------- FOR SMARTPHONES -------------------*/
+@media screen and (max-width: 900px){
+	header h1 {
+		font-size: 110%;
+	}
+
+	header ul li {
+		float: left;
+	}
+
+	.contenido {
+		max-width: 100%;
+	}
+
+	img{
+		width: 100%;
+	}
+
+	#wrapper
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#fcolumns article {
+		width: 100%;
+	}
+
+	#fcolumns {
+		height: auto;
+	}
+
+	#imagensec article{
+		width: 100%;
+	}
+
+	#secondcolumns article{
+		width: 100%;
+	}
+}
